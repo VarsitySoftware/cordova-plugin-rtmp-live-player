@@ -16,7 +16,7 @@
 		<engine name="cordova" version=">=3.5.0" />
 	</engines>  
 
-	<js-module src="www/rtmplivestreamer.js" name="RTMPLiveSPlayer">
+	<js-module src="www/rtmplivestreamer.js" name="RTMPLivePlayer">
 		<clobbers target="plugins.rtmpLivePlayer" />
 	</js-module>
 
