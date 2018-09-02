@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  id="com.varsitysoftware.plugins.rtmp.live.player"
+  version="1.0.0">
+
+	<name>RTMPLivePlayer</name>
+	 
+	<description>
+		A cordova plugin that plays live video from a server via RTMP
+	</description>
+	
+	<license>MIT</license>
+
+	<engines>
+		<engine name="cordova" version=">=3.5.0" />
+	</engines>  
+
+	<js-module src="www/rtmplivestreamer.js" name="RTMPLiveSPlayer">
+		<clobbers target="plugins.rtmpLivePlayer" />
+	</js-module>
+
+	<!-- ios -->
+	<platform name="ios">
+		<config-file target="config.xml" parent="/*">
+			<feature name="RTMPLivePlayer">
+				<param name="ios-package" value="RTMPLivePlayer"/>
+			</feature>
+		</config-file>
+
+		<header-file src="src/ios/RTMPLivePlayer.h" />
+		<source-file src="src/ios/RTMPLivePlayer.m" />
+
+	</platform>
+
+</plugin>
