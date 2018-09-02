@@ -1,0 +1,18 @@
+{
+    "version": "0.0.1",
+    "name": "cordova-plugin-rtmp-live-player",
+    "cordova_name": "Cordova RTMP Live Player",
+    "description": "Cordova RTMP Live Player",
+    "license": "MIT",
+    "repo": "https://github.com/VarsitySoftware/cordova-plugin-rtmp-live-player.git",
+    "keywords": [
+        "cordova",
+        "ios",       
+        "ios9"
+    ],
+    "platforms": [
+        "ios"
+    ],
+    "engines": [],
+    "englishdoc": ""
+}
