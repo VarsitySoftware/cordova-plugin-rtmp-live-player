@@ -9,12 +9,12 @@ var RTMPLivePlayer = function() {
 
 };
 
-RTMPLivePlayer.prototype.launch = function(success, fail, options) {
+RTMPLivePlayer.prototype.start = function(success, fail, options) {
 	if (!options) {
 		options = {};
 	}
 
-	return cordova.exec(success, fail, "RTMPLivePlayer", "launch", [options]);
+    return cordova.exec(success, fail, "RTMPLivePlayer", "start", [options]);
 };
 
 window.rtmpLivePlayer = new RTMPLivePlayer();
