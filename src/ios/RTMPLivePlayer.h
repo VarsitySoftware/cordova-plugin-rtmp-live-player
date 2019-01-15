@@ -12,6 +12,14 @@
 
 @property (copy)   NSString* callbackId;
 
-- (void) launch:(CDVInvokedUrlCommand *)command;
+- (void) start:(CDVInvokedUrlCommand *)command;
+
+@property (copy) NSString* rtmpServerURL;
+@property (copy) NSString* alertSuccess;
+@property (copy) NSString* alertOK;
+@property (copy) NSString* alertQuestionSubmitted;
+@property (copy) NSString* labelCharactersRemaining;
+@property (nonatomic, assign) NSInteger maxCharacters;
+@property (nonatomic, assign) NSInteger audienceQuestionsEnabled;
 
 @end
